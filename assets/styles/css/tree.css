@@ -1,0 +1,143 @@
+meta {
+
+}
+
+link {
+
+}
+
+script {
+
+}
+
+title {
+
+}
+
+div.header {
+  h1.header__logo {
+
+  }
+}
+
+section.rechercher-restaurants {
+  div.rechercher-restaurants__localite {
+    div.rechercher-restaurants__localite__icone {
+      i.fas.fa-map-marker-alt {
+
+      }
+    }
+
+    p.rechercher-restaurants__localite__nom {
+
+    }
+  }
+
+  h2.rechercher-restaurants__heading {
+    span.break-optionally {
+
+    }
+  }
+
+  p.rechercher-restaurants__byline {
+    span.break-optionally {
+
+    }
+  }
+
+  button.rechercher-restaurants__btn {
+
+  }
+}
+
+section.fonctionnement {
+  h2.fonctionnement__heading {
+
+  }
+
+  div.fonctionnement__etape {
+    div.fonctionnement__etape__choisir-cercle {
+
+    }
+
+    div.fonctionnement__etape__choisir-icone-mobile {
+      i.fas.fa-mobile-alt {
+
+      }
+    }
+
+    div.fonctionnement__etape__choisir-texte {
+
+    }
+  }
+}
+
+section.restaurants {
+  h2.restaurants__heading {
+
+  }
+
+  div.carte {
+    div.carte__photo {
+      img {
+
+      }
+
+      div.carte__photo__new {
+
+      }
+    }
+
+    h3.carte__titre {
+
+    }
+
+    div.carte__coeur {
+      i.far.fa-heart {
+
+      }
+    }
+
+    p.carte__lieu {
+
+    }
+  }
+}
+
+footer {
+  div.footer {
+    h3.footer__logo {
+
+    }
+
+    div.footer__logo-proposer {
+      i.fas.fa-utensils {
+
+      }
+    }
+
+    div.footer__texte-proposer {
+
+    }
+
+    div.footer__logo-partenaire {
+      i.fas.fa-hands-helping {
+
+      }
+    }
+
+    div.footer__texte-partenaire {
+
+    }
+
+    p.footer__mention-legale {
+
+    }
+
+    p {
+      a.footer__contact {
+
+      }
+    }
+  }
+}

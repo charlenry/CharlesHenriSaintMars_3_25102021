@@ -4,6 +4,49 @@
   }
 
   @if ($font == 'Roboto') {
-    @import url('https://fonts.googleapis.com/css2?family=#{$font}:wght@100;400;500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=#{$font}:wght@100;400;500;700;900&display=swap');
   }
+}
+
+@mixin gap($dimension) {
+  -webkit-gap: $dimension;
+  -ms-gap: $dimension;
+  gap: $dimension;
+}
+
+@mixin translate($x, $y) {
+// $x et $y doivent avoir une unité. Pour la valeur 0, c'est optionnel.
+  -webkit-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+
+@mixin rotate($angle) {
+// $angle doit être en degré (deg).
+  -webkit-transform: rotate($angle);
+  -ms-transform: rotate($angle);
+  transform: rotate($angle);
+}
+
+@mixin scale($width, $height) {
+// $width et $height sont des valeurs sans unité.
+// Si $width ou $height est positif, alors c'est un agrandissement.
+// Si $width ou $height est négatif, alors c'est une réduction.
+  -webkit-transform: scale($width, $height);
+  -ms-transform: scale($width, $height);
+  transform: scale($width, $height);
+}
+
+@mixin skew($angleX, $angleY) {
+// La mixin skew() incline un élément le long des axes X et Y selon les angles donnés en degré (deg).
+  -webkit-transform: skew($angleX, $angleY);
+  -ms-transform: skew($angleX, $angleY);
+  transform: skew($angleX, $angleY);
+}
+
+@mixin centrer-contenu {
+  /* Les 3 prochaines lignes permettent de centrer le contenu */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,9 +1,321 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-.logo-header {
-  font-family: "Shrikhand", cursive;
-  font-size: 30px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: Roboto, sans-serif;
+}
+
+.header {
+  display: flex;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 6.32rem;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.header__logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+.rechercher-restaurants {
+  display: grid;
+  height: 33.7rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4.88rem 0.8fr 0.5fr 1.2fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  background-color: #F6F6F6;
+}
+.rechercher-restaurants__localite {
+  /* Les 3 prochaines lignes permettent de centrer le contenu */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.88rem;
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background-image: linear-gradient(#CFCFCF, #EAEAEA 8%);
+}
+.rechercher-restaurants__localite__icone {
+  margin-right: 1.73rem;
+}
+.rechercher-restaurants__heading {
+  font-size: 2.38rem;
+  font-weight: 900;
+}
+.rechercher-restaurants .break-optionally {
+  display: block;
+}
+.rechercher-restaurants__byline {
+  font-size: 1.89rem;
+}
+.rechercher-restaurants__btn {
+  width: 22.05rem;
+  height: 5.08rem;
+  border-radius: 3rem;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  color: #FFF;
+  font-size: 1.66rem;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.fonctionnement {
+  display: grid;
+  height: 43.98rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.8fr 1fr 1fr 1fr 0.5fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  border: 0.1rem solid red;
+}
+.fonctionnement__heading {
+  width: 35rem;
+  text-align: left;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+.fonctionnement__etape {
+  width: 32.48rem;
+  height: 7.45rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 2rem;
+  background-color: #F6F6F6;
+  box-shadow: 6px 6px 8px #E8E8E8;
+}
+.fonctionnement__etape:hover {
+  background-color: #F5EDFF;
+}
+.fonctionnement__etape__choisir-cercle {
+  margin-right: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #FFF;
+  font-size: 1.5rem;
+  /* Les 3 prochaines lignes permettent de centrer le contenu */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transform: translate(-1.2rem, 0);
+  -ms-transform: translate(-1.2rem, 0);
+  transform: translate(-1.2rem, 0);
+}
+.fonctionnement__etape__choisir-icone-mobile {
+  margin-right: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #7E7E7E;
+}
+.fonctionnement__etape__choisir-texte {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.fonctionnement__etape__composer-cercle {
+  margin-right: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #FFF;
+  font-size: 1.5rem;
+  /* Les 3 prochaines lignes permettent de centrer le contenu */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transform: translate(-1.2rem, 0);
+  -ms-transform: translate(-1.2rem, 0);
+  transform: translate(-1.2rem, 0);
+}
+.fonctionnement__etape__composer-icone-liste {
+  margin-right: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #7E7E7E;
+}
+.fonctionnement__etape__composer-texte {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.fonctionnement__etape__deguster-cercle {
+  margin-right: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #FFF;
+  font-size: 1.5rem;
+  /* Les 3 prochaines lignes permettent de centrer le contenu */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transform: translate(-1.2rem, 0);
+  -ms-transform: translate(-1.2rem, 0);
+  transform: translate(-1.2rem, 0);
+}
+.fonctionnement__etape__deguster-icone-store {
+  margin-right: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #7E7E7E;
+}
+.fonctionnement__etape__deguster-texte {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.restaurants {
+  display: grid;
+  height: 122.61rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  border: 0.1rem solid red;
+  background-color: #F6F6F6;
+  margin-bottom: 2rem;
+}
+.restaurants__heading {
+  width: 34rem;
+  text-align: left;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+.restaurants .carte {
+  position: relative;
+  background-color: #FFF;
+  border-radius: 1.5rem;
+  padding-bottom: 2rem;
+  box-shadow: 6px 6px 8px #E8E8E8;
+}
+.restaurants .carte__photo img {
+  width: 34rem;
+  height: 18rem;
+  object-fit: cover;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.restaurants .carte__photo .img-la-palette {
+  /* object-position prend pour paramètre respectivement left et top */
+  object-position: 0rem -4.75rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+.restaurants .carte__photo .img-la-note {
+  /* object-position prend pour paramètre respectivement left et top */
+  object-position: 0rem -15rem;
+}
+.restaurants .carte__photo .img-la-francaise {
+  /* object-position prend pour paramètre respectivement left et top */
+  object-position: 0rem -4.5rem;
+}
+.restaurants .carte__photo .img-le-delice {
+  /* object-position prend pour paramètre respectivement left et top */
+  object-position: 0rem -5.4rem;
+}
+.restaurants .carte__photo__new {
+  position: absolute;
+  top: 1.8rem;
+  left: 24.29rem;
+  width: 8.16rem;
+  height: 2.96rem;
+  background-color: #99E2D0;
+  /* Les 3 prochaines lignes permettent de centrer le contenu */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #008766;
+  border-radius: 0.3rem;
+}
+.restaurants .carte__titre {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 1.4rem;
+  line-height: 1.5;
+}
+.restaurants .carte__lieu {
+  font-size: 1.6rem;
+  text-align: left;
+  margin-left: 1.4rem;
+}
+.restaurants .carte__coeur {
+  position: absolute;
+  top: 19.67rem;
+  left: 28.77rem;
+  font-size: 2.5rem;
+  color: #7E7E7E;
+}
+.restaurants .carte .fa-heart:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.2);
+  transition-duration: 1.5s;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 19.79rem;
+  background-color: #353535;
+  color: #FFF;
+  /* Les 3 prochaines lignes permettent de centrer le contenu */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  height: 13.43rem;
+  width: 34rem;
+  font-size: 1.7rem;
+  border: 0.1rem solid blue;
+}
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.footer__proposer {
+  display: flex;
+  gap: 1.6rem;
+  -webkit-gap: 1.6rem;
+  -ms-gap: 1.6rem;
+}
+.footer__partenaire {
+  display: flex;
+  gap: 1rem;
+  -webkit-gap: 1rem;
+  -ms-gap: 1rem;
+}
+.footer__contact {
+  text-decoration: none;
+  color: #FFF;
 }
 
 /*# sourceMappingURL=style.css.map */

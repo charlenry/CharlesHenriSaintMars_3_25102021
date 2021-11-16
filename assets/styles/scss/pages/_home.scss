@@ -1,5 +1,320 @@
-.logo-header {
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+//  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+//  grid-gap: 1rem;
+}
+
+.header__logo {  // Heading principal h1
   font-family: 'Shrikhand', cursive;
-  font-size: 30px;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+
+.rechercher-restaurants {  // Section
+  display: grid;
+  height: 33.7rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4.88rem 0.8fr 0.5fr 1.2fr;
+  justify-items: center;
+  align-items: center;
   text-align: center;
+  background-color: $couleur-fond-gris-pale;
+  
+  &__localite {
+    @include centrer-contenu;
+    height: 4.88rem;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    background-image: linear-gradient($couleur-bordure-gris-fonce, $couleur-fond-gris-fonce 8%);
+    
+    &__icone {
+      margin-right: 1.73rem;
+    }
+  }
+  
+  &__heading { // h2
+    font-size: 2.38rem;
+    font-weight: 900;
+  }
+  
+  .break-optionally {
+    display: block;
+  }
+    
+  &__byline {
+    font-size: 1.89rem;
+  }
+  
+  &__btn {
+    width: 22.05rem;
+    height: 5.08rem;
+    border-radius: 3rem;
+    background-image: linear-gradient($couleur-secondaire, $couleur-primaire);
+    color: $couleur-fond-blanc;
+    font-size: 1.66rem;
+    border: none;
+    margin-bottom: 2rem;
+  }
+}
+  
+.fonctionnement {   // Section
+  display: grid;
+  height: 43.98rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.8fr 1fr 1fr 1fr 0.5fr; 
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  border: .1rem solid red;
+  
+  &__heading { // h2
+    width: 35rem;
+    text-align: left;
+    font-size: 2.4rem;
+    font-weight: 900;
+  }
+  
+  &__etape {
+    width: 32.48rem;
+    height: 7.45rem;
+//    border: .1rem solid green;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: $couleur-fond-gris-pale;
+    box-shadow: 6px 6px 8px $couleur-ombre-portee;
+    
+    &:hover {
+      background-color: $couleur-survol-bouton-fonction;
+    }
+    
+    // ------- Premier bouton -----------------
+    &__choisir-cercle {
+      margin-right: 2rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background-color: $couleur-primaire;
+      color: $couleur-texte-blanc;
+      font-size: 1.5rem;
+      @include centrer-contenu;
+      @include translate(-1.20rem, 0);
+    }
+    
+    &__choisir-icone-mobile {
+      margin-right: 2rem;
+      font-size: 2rem;
+      font-weight: 700;
+      color: $couleur-icone;
+    }
+    
+    &__choisir-texte {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    
+    // ------Deuxième bouton ---------------
+    
+    &__composer-cercle {
+      margin-right: 2rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background-color: $couleur-primaire;
+      color: $couleur-texte-blanc;
+      font-size: 1.5rem;
+      @include centrer-contenu;
+      @include translate(-1.20rem, 0);
+    }
+    
+    &__composer-icone-liste {
+      margin-right: 2rem;
+      font-size: 2rem;
+      font-weight: 700;
+      color: $couleur-icone;
+    }
+    
+    &__composer-texte {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    
+    // ----- Troisième bouton -------
+    
+    &__deguster-cercle {
+      margin-right: 2rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background-color: $couleur-primaire;
+      color: $couleur-texte-blanc;
+      font-size: 1.5rem;
+      @include centrer-contenu;
+      @include translate(-1.20rem, 0);
+    }
+    
+    &__deguster-icone-store {
+      margin-right: 2rem;
+      font-size: 2rem;
+      font-weight: 700;
+      color: $couleur-icone;
+    }
+    
+    &__deguster-texte {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    
+  }
+  
+}
+
+
+.restaurants { // Section
+  display: grid;
+  height: 122.61rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: .3fr 1fr 1fr 1fr 1fr; 
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  border: .1rem solid red;
+  background-color: $couleur-fond-gris-pale;
+  margin-bottom: 2rem;
+  
+  &__heading { //h2
+    width: 34rem;
+    text-align: left;
+    font-size: 2.4rem;
+    font-weight: 900;
+  }
+  .carte {
+    position: relative;
+    background-color: $couleur-fond-blanc;
+    border-radius: 1.5rem;
+    padding-bottom: 2rem;
+    box-shadow: 6px 6px 8px $couleur-ombre-portee;
+
+    &__photo {
+      img {
+        width: 34rem;
+        height: 18rem;
+        object-fit:cover;
+        // border: .1rem solid red;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .img-la-palette {
+        /* object-position prend pour paramètre respectivement left et top */
+        object-position: 0rem -4.75rem;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+      }
+      .img-la-note {
+        /* object-position prend pour paramètre respectivement left et top */
+        object-position: -0rem -15rem;
+      }
+      .img-la-francaise {
+        /* object-position prend pour paramètre respectivement left et top */
+        object-position: 0rem -4.5rem;
+      }
+      .img-le-delice {
+        /* object-position prend pour paramètre respectivement left et top */
+        object-position: 0rem -5.4rem;
+      }
+
+      &__new {
+        position: absolute;
+        top: 1.8rem;
+        left: 24.29rem;
+        width: 8.16rem;
+        height: 2.96rem;
+        background-color: $couleur-tertiaire;
+        @include centrer-contenu;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: $couleur-texte-nouveau;
+        border-radius: .3rem;
+      }
+    }
+
+    &__titre {
+      font-size: 1.9rem;
+      font-weight: 700;
+      text-align: left;
+      margin-left: 1.4rem;
+      line-height: 1.5;
+    }
+
+    &__lieu {
+      font-size: 1.6rem;
+      text-align: left;
+      margin-left: 1.4rem;
+    }
+
+    &__coeur {
+      position: absolute;
+      top: 19.67rem;
+      left: 28.77rem;
+      font-size: 2.5rem;
+      color: $couleur-icone;
+      
+    }
+    .fa-heart:hover {
+      background: linear-gradient($couleur-primaire, $couleur-secondaire);
+     -webkit-background-clip: text;
+    // couleur transparente
+      color: rgba(0,0,0,.2);
+      transition-duration: 1.5s;
+    }
+  }
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 19.79rem;
+  background-color: $couleur-fond-footer;
+  color: $couleur-texte-blanc;
+  @include centrer-contenu;
+}
+
+.footer {
+  height: 13.43rem;
+  width: 34rem;
+  font-size: 1.7rem;
+  border: .1rem solid blue;
+
+  &__logo {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.9rem;
+    font-weight: 500;
+  //  letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__proposer {
+    display: flex;
+    gap: 1.6rem;
+    -webkit-gap: 1.6rem;
+    -ms-gap: 1.6rem;
+  }
+
+  &__partenaire {
+    display: flex;
+    gap: 1rem;
+    -webkit-gap: 1rem;
+    -ms-gap: 1rem;
+  }
+
+  &__contact {
+    text-decoration: none;
+    color: $couleur-texte-blanc;
+  }
+
 }
