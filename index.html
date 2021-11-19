@@ -8,10 +8,10 @@
   <script src="https://kit.fontawesome.com/1364265626.js" crossorigin="anonymous"></script>
   <title>Ohmyfood! - Répertoire des menus de restaurants gastronomiques</title>
 </head>
-<body class="main-grid">
-  <div class="header">
-    <h1 class="header__logo">ohmyfood</h1>
-  </div>
+<body class="body-accueil">
+  <header class="header-accueil">
+    <h1 class="header-accueil__logo">ohmyfood</h1>
+  </header>
 
   <section class="rechercher-restaurants">
     <div class="rechercher-restaurants__localite">
@@ -21,7 +21,7 @@
     
     <h2 class="rechercher-restaurants__heading">Réservez le menu qui <span class="break-optionally">vous convient</span></h2>
     <p class="rechercher-restaurants__byline">Découvrez des restaurant d'exception, <span class="break-optionally">sélectionnés par nos soins.</span></p>
-    <button class="rechercher-restaurants__btn">Explorer nos restaurants</button>
+    <button class="btn">Explorer nos restaurants</button>
   </section>
 
   <section class="fonctionnement">
@@ -47,7 +47,7 @@
 
   <section class="restaurants">
     <h2 class="restaurants__heading">Restaurants</h2>
-    <div class="carte">
+    <a href="./la-palette-du-gout.html" class="carte">
       <div class="carte__photo">
         <img class="img-la-palette" src="./assets/images/restaurants/menu-la-palette-du-gout.jpg" alt="Photo Menu du Restaurant La palette du goût">
         <div class="carte__photo__new">Nouveau</div>
@@ -55,9 +55,9 @@
       <h3 class="carte__titre">La palette du goût</h3>
       <div class="carte__coeur"><i class="far fa-heart fas" aria-hidden="true"></i></div>
       <p class="carte__lieu">Ménilmontant</p>
-    </div>
+    </a>
 
-    <div class="carte">
+    <a href="./la-note-enchantee.html" class="carte">
       <div class="carte__photo">
         <img class="img-la-note" src="./assets/images/restaurants/menu-la-note-enchantee.jpg" alt="Photo Menu du Restaurant La note enchantée">
         <div class="carte__photo__new">Nouveau</div>
@@ -65,25 +65,25 @@
       <h3 class="carte__titre">La note enchantée</h3>
       <div class="carte__coeur"><i class="far fa-heart fas"></i></div>
       <p class="carte__lieu">Charonne</p>
-    </div>
+    </a>
 
-    <div class="carte">
+    <a href="./a-la-francaise.html" class="carte">
       <div class="carte__photo">
         <img class="img-la-francaise" src="./assets/images/restaurants/menu-a-la-francaise.jpg" alt="Photo Menu du Restaurant À la française">
       </div>
       <h3 class="carte__titre">À la française</h3>
       <div class="carte__coeur"><i class="far fa-heart fas"></i></div>
       <p class="carte__lieu">Cité Rouge</p>
-    </div>
+    </a>
 
-    <div class="carte">
+    <a href="./le-delice-des-sens.html" class="carte">
       <div class="carte__photo">
         <img class="img-le-delice" src="./assets/images/restaurants/menu-le-delice-des-sens.jpg" alt="Photo Menu du Restaurant Le délice des sens">
       </div>
       <h3 class="carte__titre">Le délice des sens</h3>
       <div class="carte__coeur"><i class="far fa-heart fas"></i></div>
       <p class="carte__lieu">Folie-Méricourt</p>
-    </div>
+    </a>
   </section>
 
   <footer>

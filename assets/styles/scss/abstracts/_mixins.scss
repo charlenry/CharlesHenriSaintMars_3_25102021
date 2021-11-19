@@ -44,9 +44,16 @@
   transform: skew($angleX, $angleY);
 }
 
-@mixin centrer-contenu {
+@mixin centrer-texte {
   /* Les 3 prochaines lignes permettent de centrer le contenu */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin centrer-contenu-dans-grille {
+  /* Les 3 prochaines lignes permettent de centrer les éléments dans les cellules de grille */
+  justify-items: center;
+  align-items: center;
+  text-align: center;
 }

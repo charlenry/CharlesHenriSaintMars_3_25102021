@@ -8,21 +8,25 @@
   <script src="https://kit.fontawesome.com/1364265626.js" crossorigin="anonymous"></script>
   <title>Ohmyfood! - Restaurant La note enchantée</title>
 </head>
-<body class="main-grid">
-  <header class="header">
-    <div class="header__retour"><a href=""><i class="fas fa-arrow-left"></i></a></div>
-    <h1 class="header__logo">ohmyfood</h1>
-    <img src="./assets/images/restaurants/menu-la-note-enchantee.jpg" alt="Photo Menu du Restaurant La note enchantée">
+<body class="body-restaurant">
+  <header class="header-restaurant">
+    <div class="header-restaurant__retour"><a href="./index.html"><i class="fas fa-arrow-left"></i></a></div>
+    <h1 class="header-restaurant__logo">ohmyfood</h1>
   </header>
-
+  
   <div class="restaurant">
-    <h2 class="restaurant__titre">La note enchantée</h2>
-    <div class="restaurant__coeur"><i class="far fa-heart"></i></div>
+    <img class="restaurant__photo" src="./assets/images/restaurants/menu-la-note-enchantee.jpg" alt="Photo Menu du Restaurant La note enchantée">
+    <div class="restaurant__conteneur">
+      <h2 class="restaurant__conteneur__titre">La note enchantée</h2>
+      <div class="restaurant__conteneur__coeur"><i class="far fa-heart"></i></div>
+    </div>
   </div>
-    
+  
   <section class="entrees">
-    <h3 class="entrees__heading">Entrées</h3>
-    <div class="entrees__barre"></div>
+    <div class="entrees__conteneur">
+      <h3 class="entrees__conteneur__heading">Entrées</h3>
+      <div class="entrees__conteneur__barre"></div>
+    </div>
 
     <article class="entree">
       <h4 class="entree__heading">Ravioles de foie gras</h4>
@@ -62,8 +66,10 @@
   </section>
     
   <section class="plats">
-    <h3 class="plats__heading">Plats</h3>
-    <div class="plats__barre"></div>
+    <div class="plats__conteneur">
+      <h3 class="plats__conteneur__heading">Plats</h3>
+      <div class="plats__conteneur__barre"></div>
+    </div>
 
     <article class="plat">
       <h4 class="plat__heading">Noix de coquilles Saint-Jacques</h4>
@@ -94,8 +100,10 @@
   </section>
     
   <section class="desserts">
-    <h3 class="desserts__heading">Desserts</h3>
-    <div class="desserts__barre"></div>
+    <div class="desserts__conteneur">
+      <h3 class="desserts__conteneur__heading">Desserts</h3>
+      <div class="desserts__conteneur__barre"></div>
+    </div>
 
     <article class="dessert">
       <h4 class="dessert__heading">Macaron noisette et chocolat</h4>
@@ -125,15 +133,21 @@
     </article>
   </section>
   
-  <button class="btn commander">Commander</button>
+  <div class="commander">
+    <button class="btn">Commander</button>
+  </div>
 
   <footer>
     <div class="footer">
       <h3 class="footer__logo">ohmyfood</h3>
-      <div class="footer__logo-proposer"><i class="fas fa-utensils"></i></div>
-      <div class="footer__texte-proposer">Proposer un restaurant</div>
-      <div class="footer__logo-partenaire"><i class="fas fa-hands-helping"></i></div>
-      <div class="footer__texte-partenaire">Devenir partenaire</div>
+      <div class="footer__proposer">
+        <div class="footer__proposer__logo"><i class="fas fa-utensils"></i></div>
+        <div class="footer__proposer__texte">Proposer un restaurant</div>
+      </div>
+      <div class="footer__partenaire">
+        <div class="footer__partenaire__logo"><i class="fas fa-hands-helping"></i></div>
+        <div class="footer__partenaire__texte">Devenir partenaire</div>
+      </div>
       <p class="footer__mention-legale">Mentions légales</p>
       <p><a class="footer__contact" href="mailto:#">Contact</a></p>
     </div>

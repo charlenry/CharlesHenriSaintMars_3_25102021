@@ -1,7 +1,28 @@
-.header {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  height: 6.32rem;
+.header-accueil {
+  @include centrer-texte;
+  height: 6.30rem;
+
+  &__logo {  // Heading principal h1
+    font-family: 'Shrikhand', cursive;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.header-restaurant {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  height: 6.30rem;
+  @include centrer-contenu-dans-grille;
+
+  &__retour {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  
+  &__logo {  // Heading principal h1
+    font-family: 'Shrikhand', cursive;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+  }
 }
