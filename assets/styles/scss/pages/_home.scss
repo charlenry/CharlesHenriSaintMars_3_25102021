@@ -72,9 +72,13 @@
     border-radius: 2rem;
     background-color: $couleur-fond-gris-pale;
     box-shadow: 6px 6px 8px $couleur-ombre-portee;
-    
+
     &:hover {
       background-color: $couleur-survol-bouton-fonction;
+    }
+
+    &:hover i { // élément i descendant de .fonctionnement__etape
+      color: $couleur-primaire;
     }
     
     // ------- Premier bouton -----------------
@@ -153,9 +157,7 @@
       font-size: 1.5rem;
       font-weight: 700;
     }
-    
   }
-  
 }
 
 
@@ -243,20 +245,11 @@
       margin-left: 1.4rem;
     }
 
-    &__coeur {
+    &__coeur { // fas fa-heart font-awesome
+      @extend %coeur;
       position: absolute;
       top: 19.67rem;
       left: 28.77rem;
-      font-size: 2.5rem;
-      color: $couleur-icone;
-      
-    }
-    .fa-heart:hover {
-      background: linear-gradient($couleur-primaire, $couleur-secondaire);
-     -webkit-background-clip: text;
-    // couleur transparente
-      color: rgba(0,0,0,.2);
-      transition-duration: 1.5s;
     }
   }
 }
