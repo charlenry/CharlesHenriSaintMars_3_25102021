@@ -1,48 +1,41 @@
-.body-restaurant {
- // display: grid;
- // grid-template-columns: 1fr;
-//  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-//  grid-gap: 1rem;
-}
-
 .restaurant {
- // display: grid;
-//  grid-template-columns: 1fr;
- // grid-template-rows: 1fr 1fr;
- // grid-template-areas: "restaurant-photo" "restaurant-titre restaurant-coeur";
   height: 30.6rem;
-//  @include centrer-contenu-dans-grille;
   background-color: $couleur-fond-gris-pale;
 
   &__photo {
     width: 100%;
     height: 27.23rem;
     object-fit:cover;
-   // grid-area: restaurant-photo;
   }
 
   &__conteneur {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: 1fr;
-    align-items: center;
     background-color: $couleur-fond-gris-pale;
     border-top-left-radius: 4rem;
     border-top-right-radius: 4rem;
     @include translate(0, -5.5rem);
     padding-top: 3.78rem;
+    margin: 0 auto;
     width: 100%;
+
+    &__aligner {
+      display: grid;
+      grid-template-columns: 1fr 5%;
+      grid-template-rows: 1fr;
+      align-items: center;
+      margin: 0 auto;
+      width: 92%;
+
+      &__titre {
+        font-size: 2.9rem;
+        font-family: 'Shrikhand', cursive;
+        justify-self: flex-start;
+      }
     
-    &__titre {
-      //grid-area: restaurant-titre;
-      font-size: 2.9rem;
-      font-family: 'Shrikhand', cursive;
-      justify-self: flex-start;
-      margin-left: 5%;
-    }
-  
-    &__coeur { // fas fa-heart font-awesome
-      @extend %coeur;
+      &__coeur { // fas fa-heart font-awesome
+        @extend %coeur;
+        justify-self: flex-end;
+        padding-right: 2rem;
+      }
     }
   }
 }
@@ -51,18 +44,16 @@
 .entrees, .plats, .desserts { //Section
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+//  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: auto;
   grid-row-gap: 1.5rem;
-//  align-content: space-around;
   @include centrer-contenu-dans-grille;
   background-color: $couleur-fond-gris-pale;
   padding-bottom: 3.5rem;;
 
   &__conteneur {
-  //  justify-self: left;
-   // width: 34.93rem;
    width: 92%;
-    border: 0.1rem solid blue;
+ //   border: 0.1rem solid blue;
 
     &__heading {
       font-size: 1.67rem;
@@ -80,12 +71,13 @@
 }
 
 .entree, .plat, .dessert { // Article
-  border: 0.1rem solid red;
+//  border: 0.1rem solid red;
   display:flex;
   align-items: center;
   border-radius: 1.2rem;
   height: 6.82rem;
   width: 92%;
+  background-color: $couleur-fond-blanc;
   box-shadow: 6px 6px 8px $couleur-ombre-portee;
   overflow: hidden;
   position: relative;
@@ -108,7 +100,7 @@
     height: 100%;
     justify-content: center;
     @extend %ellipse;
-    border: .1rem solid green;
+  //  border: .1rem solid green;
 
     &__heading {
       font-size: 1.85rem;
@@ -129,17 +121,17 @@
     display: flex;
     height: 100%;
     align-items: flex-end;
-  //  justify-content: flex-end;
+   // justify-self: center;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 2.5;
-    padding: 0 1rem;
-    border: .1rem solid blue;
+    padding: 0 2rem;
+ //   border: .1rem solid blue;
   }
 
   &__icone {
     display: flex;
-    border: .1rem solid blue;
+  //  border: .1rem solid blue;
     height: 100%;
     padding: 0 2rem;
     align-items: center;

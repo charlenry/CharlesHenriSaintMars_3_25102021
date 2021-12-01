@@ -4,7 +4,7 @@ $couleur-tertiaire: #99E2D0;
 $couleur-fond-blanc: #FFF;
 $couleur-fond-gris-fonce: #EAEAEA;
 $couleur-bordure-gris-fonce: #CFCFCF;
-$couleur-fond-gris-pale: #F6F6F6;
+$couleur-fond-gris-pale: #F6F6F2;
 $couleur-fond-footer: #353535;
 $couleur-ombre-portee: #E8E8E8;
 $couleur-icone: #7E7E7E;
@@ -13,3 +13,17 @@ $couleur-texte-nouveau: #008766;
 $couleur-texte-primaire: #000;
 $couleur-texte-footer: #fff;
 $couleur-texte-blanc: #FFF;
+
+/* diminuer la taille du rem */
+$galaxy-fold: 280px;
+$iphone-5: 320px;
+$galaxy-s5: 360px;
+$iphone-6-7-8: 375px;
+
+/* augmenter la taille du rem */
+$ipad: 768px;
+$ipad-pro: 1024px;
+
+/* changer la disposition des blocs */
+$laptop: 1280px;
+$desktop: 1500px;
