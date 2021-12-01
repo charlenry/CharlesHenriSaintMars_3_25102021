@@ -1,6 +1,6 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
-@import 'abstracts/functions';
+//@import 'abstracts/functions';
 @import 'abstracts/extensions';
 
 @import 'pages/home';
@@ -19,10 +19,10 @@
 @import 'base/reset';
 @import 'base/typography';
 
-@import 'layout/navigation';
+//@import 'layout/navigation';
 @import 'layout/grid';
 @import 'layout/header';
 @import 'layout/footer';
-@import 'layout/sidebar';
-@import 'layout/forms';
+//@import 'layout/sidebar';
+//@import 'layout/forms';
 @import 'layout/media-queries';
