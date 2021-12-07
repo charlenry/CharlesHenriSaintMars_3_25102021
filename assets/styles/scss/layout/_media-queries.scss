@@ -81,7 +81,7 @@
 // Gestion de la page d'accueil
   .fonctionnement {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 0.4fr 1fr;
     height: 25rem;
     width: 100%;
     margin: 0 auto;
