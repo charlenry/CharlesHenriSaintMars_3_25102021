@@ -16,10 +16,11 @@
   font-family: Roboto, sans-serif;
   font-size: 4rem;
   color: $couleur-primaire;
+  text-shadow: 2px 2px 5px $couleur-bordure-gris-fonce;
   text-align: center;
   line-height: 100vh; /* line-height=height permet de centrer le texte à la verticale à l'intérieur de son parent */
   animation-name: temporiseur;
-  animation-duration: 1s;
+  animation-duration: 2s;
 
   &__loader {
     width: 5rem;
@@ -153,6 +154,7 @@
 
     &:hover {
       background-color: $couleur-survol-bouton-fonction;
+      box-shadow: 6px 6px 10px darken($couleur-ombre-portee,7%);
     }
 
     &:hover i { // élément i descendant de .fonctionnement__etape
@@ -265,6 +267,10 @@
     border-radius: 1.5rem;
     padding-bottom: 2rem;
     box-shadow: 6px 6px 8px $couleur-ombre-portee;
+
+    &:hover {
+      box-shadow: 6px 6px 20px 4px darken($couleur-ombre-portee,7%);
+    }
 
     &__photo {
       img {

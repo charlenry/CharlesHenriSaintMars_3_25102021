@@ -40,11 +40,12 @@
   font-family: Roboto, sans-serif;
   font-size: 4rem;
   color: #9356DC;
+  text-shadow: 2px 2px 5px #CFCFCF;
   text-align: center;
   line-height: 100vh;
   /* line-height=height permet de centrer le texte à la verticale à l'intérieur de son parent */
   animation-name: temporiseur;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 .tempo__loader {
   width: 5rem;
@@ -174,6 +175,7 @@
 }
 .fonctionnement__etape:hover {
   background-color: #F5EDFF;
+  box-shadow: 6px 6px 10px #d6d6d6;
 }
 .fonctionnement__etape:hover i {
   color: #9356DC;
@@ -286,6 +288,9 @@
   border-radius: 1.5rem;
   padding-bottom: 2rem;
   box-shadow: 6px 6px 8px #E8E8E8;
+}
+.restaurants .carte:hover {
+  box-shadow: 6px 6px 20px 4px #d6d6d6;
 }
 .restaurants .carte__photo img {
   width: 34rem;
@@ -419,10 +424,13 @@
   height: 6.82rem;
   width: 92%;
   background-color: #FFF;
-  box-shadow: 6px 6px 8px #E8E8E8;
+  box-shadow: 4px 4px 10px #E8E8E8;
   overflow: hidden;
   position: relative;
   visibility: hidden;
+}
+.entree:hover, .plat:hover, .dessert:hover {
+  box-shadow: 4px 4px 15px #c2c2c2;
 }
 .entree:hover .entree__icone, .entree:hover .plat__icone, .entree:hover .dessert__icone, .plat:hover .entree__icone, .plat:hover .plat__icone, .plat:hover .dessert__icone, .dessert:hover .entree__icone, .dessert:hover .plat__icone, .dessert:hover .dessert__icone {
   margin: 0rem;
@@ -546,12 +554,12 @@
   font-size: 1.66rem;
   border: none;
   margin: 3rem 0;
-  box-shadow: 6px 6px 8px #E8E8E8;
+  box-shadow: 5px 5px 10px #E8E8E8;
 }
 
 .btn:hover {
   background-image: linear-gradient(#ff93e1, #a16be0);
-  box-shadow: 6px 6px 8px #9c9c9c;
+  box-shadow: 5px 5px 10px #a8a8a8;
 }
 
 * {

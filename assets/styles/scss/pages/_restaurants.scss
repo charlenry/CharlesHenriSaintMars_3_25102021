@@ -78,10 +78,14 @@
   height: 6.82rem;
   width: 92%;
   background-color: $couleur-fond-blanc;
-  box-shadow: 6px 6px 8px $couleur-ombre-portee;
+  box-shadow: 4px 4px 10px $couleur-ombre-portee;
   overflow: hidden;
   position: relative;
   visibility: hidden;
+
+  &:hover {
+    box-shadow: 4px 4px 15px darken($couleur-ombre-portee,15%);
+  }
   
   &:hover &__icone {
     margin: 0rem;
