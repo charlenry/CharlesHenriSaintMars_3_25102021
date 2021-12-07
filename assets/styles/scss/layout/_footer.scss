@@ -4,13 +4,14 @@ footer {
   height: 19.79rem;
   background-color: $couleur-fond-footer;
   color: $couleur-texte-blanc;
-  @include centrer-texte;
+ // @include centrer-texte;
 }
 
 .footer {
   height: 13.43rem;
   width: 34rem;
   font-size: 1.7rem;
+  margin-left: 4%;
  // border: .1rem solid blue;
 
   &__logo {

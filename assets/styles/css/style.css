@@ -45,7 +45,7 @@
   line-height: 100vh;
   /* line-height=height permet de centrer le texte à la verticale à l'intérieur de son parent */
   animation-name: temporiseur;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 .tempo__loader {
   width: 5rem;
@@ -160,7 +160,7 @@
 .fonctionnement__heading {
   width: 35rem;
   text-align: left;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 900;
 }
 .fonctionnement__etape {
@@ -613,15 +613,13 @@ footer {
   height: 19.79rem;
   background-color: #353535;
   color: #FFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer {
   height: 13.43rem;
   width: 34rem;
   font-size: 1.7rem;
+  margin-left: 4%;
 }
 .footer__logo {
   font-family: "Shrikhand", cursive;
@@ -800,7 +798,7 @@ footer {
   .body-restaurant {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: auto;
+    grid-template-rows: 0.1fr 45rem 1fr 0.1fr 0.5fr;
     justify-content: center;
     align-items: flex-start;
     background-color: #F6F6F2;
@@ -845,8 +843,23 @@ footer {
     background-color: #FFF;
   }
 
+  .restaurant__photo {
+    height: 40rem;
+  }
+  .restaurant__conteneur {
+    transform: translate(0rem, -4.5rem);
+    -webkit-transform: translate(0rem, -4.5rem);
+    -moz-transform: translate(0rem, -4.5rem);
+    -ms-transform: translate(0rem, -4.5rem);
+    -o-transform: translate(0rem, -4.5rem);
+    padding-top: 3.78rem;
+  }
   .restaurant__conteneur__aligner {
     width: 97%;
+  }
+
+  .footer {
+    margin-left: 1.5%;
   }
 }
 

@@ -20,7 +20,7 @@
   text-align: center;
   line-height: 100vh; /* line-height=height permet de centrer le texte à la verticale à l'intérieur de son parent */
   animation-name: temporiseur;
-  animation-duration: 2s;
+  animation-duration: 1s;
 
   &__loader {
     width: 5rem;
@@ -137,7 +137,7 @@
   &__heading { // h2
     width: 35rem;
     text-align: left;
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 900;
   }
   

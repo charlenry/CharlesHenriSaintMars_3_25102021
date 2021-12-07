@@ -102,8 +102,8 @@
   .body-restaurant {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-  //  grid-template-rows: 0.1fr 0.8fr 1fr 0.1fr 0.5fr;
-    grid-auto-rows: auto;
+    grid-template-rows: 0.1fr 45rem 1fr 0.1fr 0.5fr;
+   // grid-auto-rows: auto;
     justify-content: center;
     align-items: flex-start;
     background-color: $couleur-fond-gris-pale;
@@ -121,16 +121,19 @@
     >:nth-child(3) { /* Section des entrées */
       grid-column: 1 / 2;
       grid-row: 3 / 4;
+    //  height: 20rem;
     }
 
     >:nth-child(4) { /* Section des plats */
       grid-column: 2 / 3;
       grid-row: 3 / 4;
+     // height: 20rem;
     }
 
     >:nth-child(5) { /* Section des desserts */
       grid-column: 3 / 4;
       grid-row: 3 / 4;
+    //  height: 20rem;
     }
 
     >:nth-child(6) { /* Bouton Commander */
@@ -149,10 +152,20 @@
   }
 
   .restaurant {
+    &__photo {
+      height: 40rem;
+    }
+
     &__conteneur {
+      @include translate(0rem, -4.5rem);
+      padding-top: 3.78rem;
       &__aligner {
         width: 97%;
       }
     }
+  }
+
+  .footer {
+    margin-left: 1.5%;
   }
 }
