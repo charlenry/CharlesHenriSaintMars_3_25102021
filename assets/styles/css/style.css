@@ -620,6 +620,8 @@ footer {
   width: 34rem;
   font-size: 1.7rem;
   margin-left: 4%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .footer__logo {
   font-family: "Shrikhand", cursive;
@@ -653,25 +655,37 @@ footer {
 /* Largeur d'écran >= 320px */
 @media screen and (min-width: 320px) {
   html {
-    font-size: 50%;
+    font-size: 54%;
   }
 }
 /* Largeur d'écran >= 360px */
 @media screen and (min-width: 360px) {
   html {
-    font-size: 55%;
+    font-size: 60%;
   }
 }
 /* Largeur d'écran >= 375px */
 @media screen and (min-width: 375px) {
   html {
-    font-size: 60%;
+    font-size: 62%;
+  }
+}
+/* Largeur d'écran >= 411px */
+@media screen and (min-width: 411px) {
+  html {
+    font-size: 69%;
+  }
+}
+/* Largeur d'écran >= 414px */
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 70%;
   }
 }
 /* Largeur d'écran >= 768px (Tablettes) */
 @media screen and (min-width: 768px) {
   html {
-    font-size: 70%;
+    font-size: 120%;
   }
 }
 /* Largeur d'écran >= 1024px */
