@@ -739,8 +739,8 @@ footer {
     grid-row: 3/4;
   }
 }
-/* Largeur d'écran >= 1400px (Desktops) */
-@media screen and (min-width: 1400px) {
+/* Largeur d'écran >= 1500px (Desktops) */
+@media screen and (min-width: 1500px) {
   html {
     font-size: 80%;
   }
