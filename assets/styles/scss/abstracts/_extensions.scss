@@ -9,6 +9,8 @@
     -webkit-background-clip: text;
     // couleur transparente
     color: rgba(0,0,0,.2);
+    -webkit-transition-duration: 1.5s;
+    -o-transition-duration: 1.5s;
     transition-duration: 1.5s;
   }
 }
