@@ -64,9 +64,9 @@
   @for $i from 1 through 4 {
     .anim-#{$i} {
       animation-name: anim;
-      animation-duration: 800ms*$i;
+      animation-duration: 400ms*$i;
       animation-timing-function: linear;
-      animation-delay: 800ms*$i;
+      animation-delay: 400ms*$i;
       animation-fill-mode: forwards;
     }
   }
