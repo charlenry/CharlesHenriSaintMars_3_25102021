@@ -48,9 +48,9 @@
 }
 
 /* Largeur d'écran >= 1024px */
-@media screen and (min-width : $ipad) {  // 1024px
+@media screen and (min-width : $ipad-pro) {  // 1024px
   html {
-    font-size: 75%;
+    font-size: 120%;
   }
 }
 
