@@ -181,11 +181,14 @@
     align-items: center;
     border-radius: 2rem;
     background-color: $couleur-fond-gris-pale;
-    box-shadow: 6px 6px 8px $couleur-ombre-portee;
+    box-shadow: 4px 4px 6px $couleur-ombre-portee;
+    -webkit-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    transition-duration: 0.7s;
 
     &:hover {
       background-color: $couleur-survol-bouton-fonction;
-      box-shadow: 6px 6px 10px darken($couleur-ombre-portee,7%);
+      box-shadow: 0 5px 20px 0px darken($couleur-ombre-portee,20%);
     }
 
     &:hover i { // élément i descendant de .fonctionnement__etape
@@ -297,10 +300,13 @@
     background-color: $couleur-fond-blanc;
     border-radius: 1.5rem;
     padding-bottom: 2rem;
-    box-shadow: 6px 6px 8px $couleur-ombre-portee;
+    box-shadow: 4px 4px 6px $couleur-ombre-portee;
+    -webkit-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    transition-duration: 0.7s;
 
     &:hover {
-      box-shadow: 6px 6px 20px 4px darken($couleur-ombre-portee,7%);
+      box-shadow: 0 6px 20px 5px darken($couleur-ombre-portee,20%);
     }
 
     &__photo {

@@ -12,9 +12,15 @@
   border: none;
   margin: 3rem 0;
   box-shadow: 5px 5px 10px $couleur-ombre-portee;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 .btn:hover {
-  background-image: linear-gradient(lighten($couleur-secondaire,5%),lighten($couleur-primaire,5%));
-  box-shadow: 5px 5px 10px darken($couleur-ombre-portee,25%);
+  background-image: linear-gradient(lighten($couleur-secondaire,5%),lighten($couleur-primaire,2%));
+  box-shadow: 5px 5px 10px darken($couleur-ombre-portee,35%);
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }

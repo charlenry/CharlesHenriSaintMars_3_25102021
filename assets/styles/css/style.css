@@ -203,11 +203,14 @@
   align-items: center;
   border-radius: 2rem;
   background-color: #F6F6F2;
-  box-shadow: 6px 6px 8px #E8E8E8;
+  box-shadow: 4px 4px 6px #E8E8E8;
+  -webkit-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
 }
 .fonctionnement__etape:hover {
   background-color: #F5EDFF;
-  box-shadow: 6px 6px 10px #d6d6d6;
+  box-shadow: 0 5px 20px 0px #b5b5b5;
 }
 .fonctionnement__etape:hover i {
   color: #9356DC;
@@ -319,10 +322,13 @@
   background-color: #FFF;
   border-radius: 1.5rem;
   padding-bottom: 2rem;
-  box-shadow: 6px 6px 8px #E8E8E8;
+  box-shadow: 4px 4px 6px #E8E8E8;
+  -webkit-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
 }
 .restaurants .carte:hover {
-  box-shadow: 6px 6px 20px 4px #d6d6d6;
+  box-shadow: 0 6px 20px 5px #b5b5b5;
 }
 .restaurants .carte__photo img {
   width: 34rem;
@@ -460,6 +466,9 @@
   overflow: hidden;
   position: relative;
   visibility: hidden;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 .entree:hover, .plat:hover, .dessert:hover {
   box-shadow: 4px 4px 15px #c2c2c2;
@@ -623,11 +632,17 @@
   border: none;
   margin: 3rem 0;
   box-shadow: 5px 5px 10px #E8E8E8;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 .btn:hover {
-  background-image: linear-gradient(#ff93e1, #a16be0);
-  box-shadow: 5px 5px 10px #a8a8a8;
+  background-image: linear-gradient(#ff93e1, #985ede);
+  box-shadow: 5px 5px 10px #8f8f8f;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 * {
