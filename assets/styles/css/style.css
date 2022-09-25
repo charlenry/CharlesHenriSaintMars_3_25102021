@@ -895,7 +895,7 @@ footer {
   .body-restaurant {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.1fr 45rem 1fr 0.1fr 0.5fr;
+    grid-template-rows: 0.1fr 45rem 1fr;
     justify-content: center;
     align-items: flex-start;
     background-color: #F6F6F2;
