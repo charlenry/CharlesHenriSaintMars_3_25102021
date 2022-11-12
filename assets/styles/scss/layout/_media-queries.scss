@@ -120,6 +120,7 @@
   .fonctionnement {
     grid-column: 2;
     grid-row: 3;
+    grid-template-rows: 0.35fr 1fr 1fr 1fr 0.5fr; 
   }
 
   .restaurants {
