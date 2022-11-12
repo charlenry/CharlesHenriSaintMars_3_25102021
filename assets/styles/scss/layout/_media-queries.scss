@@ -65,26 +65,61 @@
 /* Largeur d'écran >= 1280px (Laptops) */
 @media screen and (min-width: $laptop) {
   // 1280px
+    // Gestion de la page d'accueil
   html {
-    font-size: 85%;
+    font-size: 86%;
   }
 
-  // Gestion de la page d'accueil
+  .body-accueil {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  //  grid-gap: 1rem;
+  }
+
+  .tempo {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .header-accueil {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .rechercher-restaurants {
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 7rem;
+    border-radius: 2rem;
+  }
+
+  .rechercher-restaurants__localite {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+
   .fonctionnement {
-    & > :nth-child(1) {
-      // Heading
-      text-align: center;
-    }
+    grid-column: 2;
+    grid-row: 3;
+    grid-template-rows: 0.35fr 1fr 1fr 1fr 0.5fr; 
   }
 
   .restaurants {
+    grid-column: 1 / 3;
+    grid-row: 4;
     @include cartes-restaurants;
+  }
+
+  footer {
+    grid-column: 1 / 3;
+    grid-row: 5;
   }
 }
 
 /* Largeur d'écran >= 1500px (Desktops) */
 @media screen and (min-width: $desktop) {
   // >= 1500px
+  // Gestion de la page d'accueil
   html {
     font-size: 90%;
   }
@@ -126,6 +161,7 @@
   .restaurants {
     grid-column: 1 / 3;
     grid-row: 4;
+    @include cartes-restaurants;
   }
 
   footer {
@@ -133,9 +169,6 @@
     grid-row: 5;
   }
 
-  .restaurants {
-    @include cartes-restaurants;
-  }
 
   // Gestion des pages menu
   .body-restaurant {
