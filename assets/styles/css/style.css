@@ -814,7 +814,11 @@ footer {
   .fonctionnement {
     grid-column: 2;
     grid-row: 3;
-    grid-template-rows: 0.35fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.1fr 0.27fr 0.27fr 0.27fr;
+    height: 38rem;
+  }
+  .fonctionnement__heading {
+    text-align: left;
   }
 
   .restaurants {
@@ -896,7 +900,11 @@ footer {
   .fonctionnement {
     grid-column: 2;
     grid-row: 3;
-    grid-template-rows: 0.35fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.1fr 0.27fr 0.27fr 0.27fr;
+    height: 38rem;
+  }
+  .fonctionnement__heading {
+    text-align: left;
   }
 
   .restaurants {
