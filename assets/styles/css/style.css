@@ -803,6 +803,7 @@ footer {
     grid-row: 3;
     margin-left: 7rem;
     border-radius: 2rem;
+    box-shadow: 4px 4px 6px #E8E8E8;
   }
 
   .rechercher-restaurants__localite {
@@ -884,6 +885,7 @@ footer {
     grid-row: 3;
     margin-left: 7rem;
     border-radius: 2rem;
+    box-shadow: 4px 4px 6px #E8E8E8;
   }
 
   .rechercher-restaurants__localite {
