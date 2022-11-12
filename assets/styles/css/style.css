@@ -768,13 +768,13 @@ footer {
 /* Largeur d'écran >= 768px (Tablettes) */
 @media screen and (min-width: 768px) {
   html {
-    font-size: 120%;
+    font-size: 100%;
   }
 }
 /* Largeur d'écran >= 1024px */
 @media screen and (min-width: 1024px) {
   html {
-    font-size: 120%;
+    font-size: 100%;
   }
 }
 /* Largeur d'écran >= 1280px (Laptops) */
